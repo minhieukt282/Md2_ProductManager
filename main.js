@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var product_1 = require("./product");
+var manager_1 = require("./manager");
+var product1 = new product_1.Product("a1", 20);
+var product2 = new product_1.Product("a2", 30);
+var product3 = new product_1.Product("a3", 40);
+var manager = new manager_1.Manager();
+manager.addProduct = product1;
+manager.addProduct = product2;
+manager.add(product3);
+console.log(manager.showlistProduct);
